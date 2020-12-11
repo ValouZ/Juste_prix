@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <title>Le juste prix</title>
+    </head>
+    <body>
+        <div class="title">
+            <h1>Le juste prix</h1>
+            <h2>10 chances pour atteindre vos rêves</h2>
+            <h3>by ValouZ for <span>hetic</span></h3>
+        </div>
+
+        <div class="setup">
+            <div class="rules">
+                <h4>Règles du jeux :</h4>
+                <div class="rules-list">
+                    <ul>
+                        <li>Définissez l'intervalle de recherche</li>
+                        <li>Lancez le jeu quand vous êtes prêt.e</li>
+                        <li>Vous avez 10 chances pour trouver la valeur cachée</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="range">
+                <h4>Intervalle de recherche</h4>
+                <div class="input-range">
+                    <div class="from">
+                        <label for="from">de :</label>
+                        <input class="input" type="number" id="from" required>
+                    </div>
+                    <div class="to">
+                        <label for="to">à :</label>
+                        <input class="input" type="number" id="to" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game" id="game">
+            <div class="launch" id="launch">
+                <button id="btn-launch" class="btn">Lancer le jeu</button>
+            </div>
+        </div>
+        
+        <div class="history" id="histo">
+            <h4 class="history-title">Historique</h4>
+            <table class="history-table" id="history-table">
+                <tr class="tr-title">
+                    <th>Partie N°</th>
+                    <th>Résultat</th>
+                    <th>Tentatives</th>
+                    <th>Valeur cachée</th>
+                    <th>Borne inférieur</th>
+                    <th>Borne supérieur</th>
+                </tr>
+            </table>
+        </div>
+        <script src="dom_manipulation.js"></script>
+    </body>
+</html>
